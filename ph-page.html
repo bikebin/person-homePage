@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.6/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="public/css/index.css"/>
+    <link rel="stylesheet" href="public/css/base.css"/>
+    <link rel="stylesheet" href="public/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    
+	
+
+</head>
+<body ng-app="zns_weibo" ng-controller="weibo">	
+<!-- 导航 head-->
+  <nav class="daohang navbar navbar-default navbar-fixed-top ">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"  aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Bikebin</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  生活点滴 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">过往趣事</a></li>
+              <li><a href="#">个人收藏</a></li>
+              <li><a href="#">我的喜欢</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">热爱生活</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  学习点滴  <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">studied</a></li>
+              <li><a href="#">学习技巧</a></li>
+              <li><a href="#">喜爱科目</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">love  study</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  资料分享<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">我的发表</a></li>
+              <li><a href="#">技术文章</a></li>
+              <li><a href="#">收集资料</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">宝贵资料</a></li>
+            </ul>
+          </li>
+        </ul>
+  
+         <form class="navbar-form fr">
+         <span class="pro">想找什么吗?</span>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">搜索</button>
+        </form>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<!-- 导航 foot-->
+<!-- left-content head-->
+ <div class="mp-three">
+  <audio src="video/Bigbang.mp3" id="audio"></audio>
+  <span class="open">open</span>
+  <span class="pause">pause</span>
+ </div>                                                   <!-- 栅栏与栅栏之间一定要有个row包裹 -->
+
+
+  <ul class="navclass container">
+    <li class="navclass01">
+      <div class="row zhu container">
+          <div class="left-content col-md-3">
+    <div>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs left-content-top" role="tablist">
+      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">精彩语句</a></li>
+      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">  名言语录</a></li>
+      <li role="presentation"><a href="#story" aria-controls="story" role="tab" data-toggle="tab">  段落赏析</a></li>
+      <li role="presentation"><a href="#english" aria-controls="english" role="tab" data-toggle="tab">  english</a></li>
+     
+
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content left-content-bottom">
+        <div role="tabpanel" class="tab-pane active" id="home">
+           <h6><span>1、</span>真理惟一可靠的标准就是永远自相符合 </h6>
+           <h6><span>2、</span>生命力的意义在于拼搏，因为世界本身就是一个竞技场。 </h6>
+           <h6><span>3、</span>生命的道路上永远没有捷径可言，只有脚踏实地走下去。 </h6>
+           <h6><span>4、</span>生命之长短殊不重要，只要你活得快乐，在有生之年做些有意义的事，便已足够。</h6>
+           <h6><span>5、</span>吃别人吃不了的苦，忍别人受不了的气，付出比别人更多的，才会享受的比别人更多。</h6>
+           <h6><span>6、</span>学会改变生活，学会品味沧桑，方可无悔青春，无憾岁月的消逝。</h6>
+           
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+          
+           <h6>每个年龄都是最好的。请享受你现在的年龄 <small>—— 麦达德·赖茨</small></h6>
+           <h6>一件事实是一条没有性别的真理。<small>—— 纪伯伦</small>  </h6>
+           <h6>爱情原如树叶一样，在人忽视里绿了，在忍耐里露出蓓蕾。<small> —— 何其芳 </small></h6>
+           <h6>笨蛋自以为聪明，聪明人才知道自己是笨蛋。<small>—— 莎士比亚</small>  </h6>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="story">
+           <p> 我静静的站在角落里，看着这个世界，看着来来往往的人群。 
+               每个人都步履匆匆的从我的身边走过，渐行渐远。 
+               似乎所有的人都处于已经离开我，或者将要离开，以及正在离开……
+          </p>
+          <p>也许是我要的太多了。 
+             而我要的，是看不见的，无法衡量，无法捕捉，更无法留住。 
+             一个什么都想要的人，最后多半是什么都得不到。 
+             别人并不能给我，或者不能，或者不愿
+          </p>
+          <p>
+             突然，我发现自己也在渐渐遗忘某些人，某些事，渐渐在远离一些人的生活。 
+             安静的走近，安静的离开。 
+             离开·遗忘
+          </p>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="english">
+         <p> The great pleasure in life is doing what people say you cannot do.
+         </p>
+          <p> The great pleasure in life is doing what people say you cannot do.
+         </p>
+         <p>If you saw the darkness in front of you, don't be afraid, that's because sunshine is at your back.</p>
+         <p>
+           You raise me up,so I can stand on mountains .You raise me up,to walk on stormy seas. —《You raise me up》
+         </p>
+         <p>
+           Life is not a rehearsal—there is no replay button.
+         </p>
+         <p>
+           Use your smile to change the world. Don't let the world change your smile. 
+         </p>
+        </div>
+       
+      </div>
+    </div>
+          </div>
+          <div class="middle-content col-md-6 fl">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="public/image/00.JPG" alt="beautiful">
+            <div class="carousel-caption">
+            这是一个三虎牙
+            </div>
+        </div>
+        <div class="item">
+          <img src="public/image/01.JPG" alt="美女">
+          <div class="carousel-caption">
+            keai的三虎牙
+          </div>
+        </div>
+        <div class="item">
+          <img src="public/image/02.JPG" alt="...">
+          <div class="carousel-caption">
+            nishibushi我的的三虎牙
+          </div>
+        </div>
+         <div class="item">
+          <img src="public/image/07.JPG" alt="美女">
+          <div class="carousel-caption">
+            xidada
+          </div>
+        </div>
+        <div class="item">
+          <img src="public/image/04.JPG" alt="...">
+          <div class="carousel-caption">
+            小狗
+          </div>
+        </div>
+         <div class="item">
+          <img src="public/image/05.JPG" alt="美女">
+          <div class="carousel-caption">
+            毕业照我最帅
+          </div>
+        </div>
+        <div class="item">
+          <img src="public/image/08.JPG" alt="美女">
+          <div class="carousel-caption">
+            毕业照
+          </div>
+        </div>
+        
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"  >
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+     </div>
+          </div>
+          <div class="right-content col-md-3 fr">
+    <div class="items">
+      <div class="item">
+        <div class="pic">
+            <img src="public/image/back.png">
+            <a href="javascript" class="logo">
+                <img src="public/image/touxiang.jpg">
+            </a>
+        </div>
+        <div class="brief clearfix">
+          <div class="name-top"><span>楼主: bikebin</span><span>等级: 5</span></div>
+          <div class="name-bottom"><span>兴趣: 篮球,歌唱</span><span>技能: paoniu</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="right-content-bottom">
+      <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="个人资料"><i class="fa fa-user-circle"></i>
+      </button>
+
+      <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="优点"><i class="fa fa-star"></i>
+      </button>
+      
+      <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="给我留言"><i class="fa fa-comment-o"></i>
+      </button>
+      
+      <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="了解一下"><i class="fa fa-search"></i>
+      </button>
+      <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="为什么叫单车"><i class="fa fa-bicycle"></i>
+      </button>
+    </div>
+    <div class="changebgc">
+      <div>
+        <div class="item01" data-brief="">
+          <div class="radial-gradient"></div>
+        </div>
+        <div class="item02" data-brief="">
+          <div class="radial-gradient"></div>
+        </div>
+        <div class="item03" data-brief="">
+          <div class="radial-gradient"></div>
+        </div>
+        <div class="item04" data-brief="">
+          <div class="radial-gradient"></div>
+        </div>
+      </div>
+    </div>
+          </div>
+      </div>
+    </li>
+    <li class="navclass02">
+        <!-- 标题：文章赏析 -->
+        <div class="container"><h3 class="content-title">文章赏析<i class="fa fa-book"></i></h3></div>
+       
+        <!-- <div class="content-title container fa fa-book">文章赏析<i class=""></i></div> -->
+        <div class="panel-group container" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  家
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                他说“有你在的日子我没羡慕过任何人”，我说“我在家的日子我哪里也不想去”家，这个词有一种魔力，让你时时刻刻心系着她，我无法给出一个具体的定义，只能通过一些简单的表达来勾勒一个蓝图。无论走得多远，无论飞得多高，当你想要停下脚步安安心心的休息一下的时候，你首先想到的就是那个被称为家的地方；无论房子大小，无论存款多少，当你想要逃离纷扰觅一方可放松的净土的时候，你首先想到的就是那个被称为家的地方；无论现实如何，无论社会怎样，当你想要不顾形象歇斯打理的爆发一下的时候，你首先想到的依旧是那个被称为家的地方。
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="        collapseTwo">
+                  美好的东西
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                有人说：美好的东西，往往消失太快。所以大凡是美丽的事物，只有失去时候，才知道什么是珍贵。多少柔情在你的诗中纷飞，多少爱恋在诗句中深种，留下那千古绝唱。最美的人间爱情，无非是这柴米油盐酱醋茶里，还能保持一份诗意，不染世俗，高雅，恬美的浪漫情怀。只有真爱，才会在时间里越走越稳当，越牢靠；也只有真爱，才会相互疼怜，相互懂得，相互珍惜。真爱，是纯粹的美好，不惨杂利欲，如空谷幽兰，美成温柔，美成诗，美成画。
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  你不知道的事
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+               人们心中总有一扇叫做你不知道的事的大门,对,他们会在门里放上自己的秘密,然后把它们藏起来,他们藏起来的就是真实的自己.就连青少年也如此哦,他们也自以为是的认为自己长大了,去撷取了爱情的果实,认为自己爱的有多么深刻,有多么刻骨铭心,但是,他们却连爱和喜欢都分不清,还傻傻的说"我爱你"这样的话,但是,毕竟也是孩子嘛,这样的单纯和天真也是他们所有的.他们喜欢用华美而伤感的句子包裹自己,他们认为自己经历的很多,认为自己看破了人生,只想简单就好,可是啊,他们就活在人生中,又怎么去做天外人呢?他们也许只是受了点伤,想在黑暗中静静地舔舐,所以选择包裹自己,但是啊,孩子
+               黑夜不会给你疗伤,它只会赋予你孤独,来阳光下吧,柔和的温度会给予你一切希望,所以,来吧,不要躲在黑暗中了
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- *******article****** -->
+        <div class="container clearfix">
+          <div class="row ">
+            <div class="col-md-6">
+              <div class="drop-shadow round">
+                  <h4>今生来世</h4>
+                  <p>离开这个世界的那一天,你哭了.我从未见过你如此，你哭得像个孩子我想走过去抱抱你,可我的手穿越了你的身体，我触摸不到你,我只能看着你，做生活中琐碎的事。比如睡觉，你不知道吧？你睡觉的时候我会进入你的梦里，可你总是哭着醒来。原来死也是一种幸福，可以守护我爱的人。所以我没有去投胎转世，我不愿喝那碗孟婆汤。因为它会将你我曾经相爱过的记忆抹去，我不能容忍它的消失因为在你身边的不再是我，我哭了</p>
+                   <span class="fr">
+                  <i class="fa fa-heart-o round01"></i> <span class="round01-aixin fr">&nbsp;1</span>
+                  <i class="fa fa-commenting-o"></i> <span class="liuyan fr"> 3</span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="drop-shadow round">
+                  <h4>错过</h4>
+                  <p>错过，是人生不可避免的经历，在这些错过，我们也学会了成长，但却有时让我们后悔，谁也都知道世上无后悔药；时间，往往是抚平我们内心的一剂药，让我们忘却曾经的种种，曾经的伤痛，我们也都应明白，无论怎样，时间会改变一切的一切，不管你有多么的痛；有时候我们也许会静下心来，想想我们过去的一切，错过的事物，错过的爱情…都是一种可惜，但是这一种可惜，只是过客.</p>
+                   <span class="fr">
+                  <i class="fa fa-heart-o round02"></i> <span class="round02-aixin fr">&nbsp;1</span>
+                  <i class="fa fa-commenting-o"></i> <span class="liuyan fr"> 3</span>
+                </span>
+              </div>
+            </div>
+           <div>
+        </div>
+         
+          
+          <div class="row">
+            <div class="col-md-6">
+              <div class="drop-shadow raised">
+                <h4>谢谢你的曾经</h4>
+                <p>世间有许多的不如意，我能的、我有的，不过是在那份拥有后的失去中，学会跨过那道垲，让它成为逝去，全新的去寻找属于自我的栖息之地。</p>
+                 <span class="fr">
+                  <i class="fa fa-heart-o raised01"></i> <span class="raised01-aixin fr">&nbsp;1</span>
+                  <i class="fa fa-commenting-o "></i> <span class="liuyan fr"> 3</span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="drop-shadow raised">
+                <h4>刚好遇见你</h4>
+                <p class="fl">你是莞尔失笑，还是潸然泪下，亦或是挽起我的手臂，如现在一样的幸福甜蜜。</p>
+                <span class="fr">
+                  <i class="fa fa-heart-o raised02"></i> <span class="raised02-aixin fr">&nbsp;1</span>
+                  <i class="fa fa-commenting-o"></i> <span class="liuyan fr"> 3</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        
+    </li>
+    <li class="navclass03">
+      <div class="container">
+          <h3>电影时刻 <span class="label label-default">smile</span></h3>
+          <div class="row rowflim">
+             <div class="col-md-6">
+                 <div class="">
+                    <video controls="controls" class="video">
+                      <!-- 通过source标签指定多格式视频文件 -->
+                      <!-- <source src="./video/movie.ogg"> -->
+                      <source src="./video/movie.mp4">
+                      您的浏览器不支持HTML视频播放功能
+                    </video>
+                 </div>
+             </div>
+             <div class="col-md-6">
+                <div class="focus">
+                   <div class="focus-top"><div class="focus-logo fl"></div><div class="fl">我的电影</div></div>
+                   <div class="focuscontent">
+                     <div class="row focus-row01">
+                       <div class="col-md-4"><span><a href="">爱情公寓</a></span></div>
+                       <div class="col-md-3 addcolor02"><span ><a href="" class="addfontcolor ">wwe</a></span></div>
+                       <div class="col-md-3"><span><a href="">夏洛特烦恼</a></span></div>
+                     </div>
+                     <div class="row focus-row02">
+                       <div class="col-md-6"><span><a href="">超人大战奥特曼</a></span></div>
+                       <div class="col-md-5"><span><a href="">战狼</a></span></div>
+                     </div>
+                     <div class="row focus-row03">
+                       <div class="col-md-6"><span><a href="">功夫足球</a></span></div>
+                       <div class="col-md-4"><span><a href="">nba</a></span></div>
+                     </div>
+                   </div>
+                  </div>
+             </div>
+          </div>
+      </div>
+       
+    </li>
+    <li class="navclass04" >
+        <div class="container">
+        <h3>picture wall <span class="label label-default">pic</span></h3>
+          <div class="seamless-view">
+            <ul class="seamless">
+                <li><img src="public/image/mine00.jpg" alt=""></li>
+                <li><img src="public/image/mine01.jpg" alt=""></li>
+                <li><img src="public/image/mine02.jpg" alt=""></li>
+                <li><img src="public/image/mine04.jpg" alt=""></li>
+                <li><img src="public/image/mine05.jpg" alt=""></li>
+                <li><img src="public/image/mine06.jpg" alt=""></li>
+                <li><img src="public/image/mine07.jpg" alt=""></li>
+                <li><img src="public/image/mine00.jpg" alt=""></li>
+                <li><img src="public/image/mine01.jpg" alt=""></li>
+                <li><img src="public/image/mine02.jpg" alt=""></li>
+                <li><img src="public/image/mine04.jpg" alt=""></li>
+                <li><img src="public/image/mine05.jpg" alt=""></li>
+                <li><img src="public/image/mine06.jpg" alt=""></li>
+                <li><img src="public/image/mine07.jpg" alt=""></li>
+            </ul>
+          </div>
+          <div class="znsArea">
+            <!--留言-->
+                 <div class="takeComment">
+                    <textarea name="textarea" class="takeTextField" id="tijiaoText" ng-model="inputText"></textarea>
+                    <div class="takeSbmComment">
+                        <input type="button" class="inputs" value="enter" ng-click="submitMsg()" />
+                        <span>(可按 Enter 回复)</span>
+                    </div>
+                </div>
+            <!--已留-->
+                <div class="commentOn">
+                    <div class="noContent" ng-show="replies.length==0">暂无留言</div>
+                    <div class="page">
+                      <a href="javascript:;" ng-repeat="item in pages  track by $index" class="{{item.className}}" ng-click="getPage(item.num)">{{item.num}}</a>
+                    </div>
+                    <div class="messList">
+                      <div class="reply" ng-repeat="reply in replies  track by $index">
+                            <p class="replyContent">{{reply.content}}</p>
+                            <p class="operation">
+                                <span class="replyTime">{{reply.time*1000|date:"yyyy-MM-dd HH:mm:ss"}}</span>
+                                <span class="handle">
+                                  <a href="javascript:;" class="top_icon" ng-click="fnAcc(reply.id)">{{reply.acc}}</a>
+                                    <a href="javascript:;" class="down_icon" ng-click="fnRef(reply.id)">{{reply.ref}}</a>
+                                    <a href="javascript:;" class="cut" ng-click="fnDel(reply.id)"></a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+          
+          
+          
+        </div>
+    </li>
+    <li class="navclass05">
+        <div class="container">
+          <footer>
+              <nav class="foot-navs">
+                 <a href="#">
+                     <span data-hover="迪丽热巴">我的女朋友</span>
+                 </a>
+                 <a href="#">
+                     <span data-hover="古力娜扎">我的女朋友</span>
+                 </a>
+                 <a href="#">
+                     <span data-hover="刘亦菲">我的女朋友</span>
+                 </a>
+                 <a href="#">
+                     <span data-hover="范冰冰">我的女朋友</span>
+                 </a>
+                 <a href="#">
+                     <span data-hover="zhangziying">我的女朋友</span>
+                 </a>
+                 <a href="#">
+                     <span data-hover="楚雨荨">我的女朋友</span>
+                 </a>
+                 <a href="#">
+                     <span data-hover="还有谁...">我的女朋友</span>
+                 </a>
+                 <a href="#">
+                     <span data-hover="想不出了...">我的女朋友</span>
+                 </a>
+              </nav>
+          </footer>
+        </div>
+    </li>
+  </ul>
+  
+  <ol id="article" class="container fr">
+    <li>首页</li>
+    <li>新闻</li>
+    <li>动态</li>
+    <li>风格</li>
+    <li>作品</li>
+  </ol> 
+
+
+   
+   <script src="public/js/angular.js"></script>
+    <script src="public/js/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
+    <script src="public/js/index.js"></script>
+    <script src="public/js/navclass.js"></script>
+     <!-- <script src="public/js/daohang.js"></script> -->
+     <script src="public/js/app.js"></script>
+     
+     
+
+
+
+</body>
+</html>
